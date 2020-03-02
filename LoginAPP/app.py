@@ -3,7 +3,7 @@ import csv
 
 app = Flask(__name__)
 
-app.secret_key = b'_5#y2L"F4Q8zabc\n\xec]/'
+app.secret_key = b'key'
 
 @app.route('/')
 def index():
