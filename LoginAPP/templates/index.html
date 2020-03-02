@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <h1>Login App</h1>
+    </head>
+
+    <body>
+        {% if login %}
+            <h1>Welcome, {{name}}</h1><br>
+            <form action="{{url_for('logout')}}">
+                <input type="submit" value="logout" name="logout">
+            </form>
+        {% else %}
+            <h1>Welcome to Login App</h1>
+            <form action="{{url_for('login')}}">
+                <input type="submit" value="Login">
+            </form>
+            <form action="{{url_for('register')}}">
+                <input type="submit" value="Register">
+            </form>
+        {% endif %}
+    </body>
+</html>
